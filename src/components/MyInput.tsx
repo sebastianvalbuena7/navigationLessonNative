@@ -3,16 +3,16 @@ import { Color } from "../constants/colors"
 import { Dispatch, SetStateAction } from "react"
 
 interface Props {
-    label: string, 
+    label: string,
     value?: string,
     onChangeText?: Dispatch<SetStateAction<string>>,
     secureTextEntry?: boolean
 }
 
-const MyInput = ({label, value, onChangeText, secureTextEntry}: Props) => {
+const MyInput = ({ label, value, onChangeText, secureTextEntry }: Props) => {
     return (
         <View style={styles.container}>
-            <TextInput 
+            <TextInput
                 placeholder={label}
                 style={styles.input}
                 value={value}
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         borderColor: Color.primary
     },
     input: {
-        
+
     }
 })
 
